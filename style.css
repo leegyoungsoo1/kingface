@@ -1,15 +1,16 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Cute Font', cursive;
   background-color: #ffffff;
+  box-sizing: border-box;
+  color: #35465d;
 }
-
 .file-upload {
-  background-color: #ffffff;
-  width: 500px;
-  margin: 0 auto;
-  padding: 20px;
+    padding: 15% 3%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: solid 1.5px #f6f7fa;
+    background-color: #f6f7fa;
 }
-
 .file-upload-btn {
   width: 100%;
   margin: 0;
@@ -42,6 +43,11 @@ body {
   text-align: center;
 }
 
+#loading {
+  display: none;
+}
+
+
 .file-upload-input {
   position: absolute;
   margin: 0;
@@ -53,55 +59,58 @@ body {
   cursor: pointer;
 }
 
+
 .image-upload-wrap {
-  margin-top: 20px;
-  border: 4px dashed #1FB264;
-  position: relative;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+    border-radius: 10px;
+    border: dashed 1.5px #35465d;
+    background-color: #ffffff;
 }
 
 .image-dropping,
 .image-upload-wrap:hover {
-  background-color: #1FB264;
-  border: 4px dashed #ffffff;
+    background-color: #35465d82;
+    border: 1.5px dashed #ffffff;
 }
+
 
 .image-title-wrap {
   padding: 0 15px 15px 15px;
   color: #222;
-    
 }
+
 
 .drag-text {
   text-align: center;
 }
 
 .drag-text h3 {
-  font-weight: 100;
+  font-weight: 500;
   text-transform: uppercase;
-  color: #15824B;
-  padding: 60px 0;
 }
 
 .file-upload-image {
-  max-height: 200px;
-  max-width: 200px;
+  max-height: 60%;
+  max-width: 60%;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
-.remove-image {
-  width: 200px;
-  margin: 0;
-  color: #fff;
-  background: #cd4535;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  border-bottom: 4px solid #b02818;
-  transition: all .2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 700;
+.try-again-btn {
+  border-radius: 40px;
+  border: solid 1.5px #35465d;
+  background-color: #35465d;
+}
+
+.try-again-text {
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 4px 15px;
 }
 
 .remove-image:hover {
@@ -115,33 +124,31 @@ body {
   border: 0;
   transition: all .2s ease;
 }
-.navbar-light .navbar-brand{
-    font-family: NanumSquareR;    
-    line-height: 1.68;
-    text-align: left;
-    color: #35465d;
+.navbar-light .navbar-brand {
+  line-height: 1.68;
+  text-align: left;
+  color: #35465d; 
 }
 
-.navbar-light .navbar-toggler{
+.navbar-light .navbar-toggler {
     border-color: #ffffff;
 }
 
-.section{
-    margin-top: 100px;
+
+.section {
+    margin-top: 50px;
 }
 
-.title{
-    font-family: NanumSquareR;    
-    line-height: 1.67;
-    text-align: center;
-    color: #35465d;
+.title {
+  line-height: 1.67;
+  text-align: center;
+  color: #35465d;
 }
 
-.subtitle{
-    font-family: NanumSquareR;    
-    line-height: 1.53;
-    text-align: center;
-    color: #35465d;    
+.subtitle {
+  line-height: 1.53;
+  text-align: center;
+  color: #35465d;
 }
 
 /* On screens that are 600px or less, set the background color to olive */
@@ -149,39 +156,75 @@ body {
   html {
     font-size: 10px;
   }
-    .navbar-brand{
+    .navbar-brand {
         font-size: 2rem;
     }
 }
 
-
-.file-upload{    
-    border-radius: 10px;
-    border:solid 1.5px #f6f7fa;
-    background-color:#f6f7fa;
+.upload {
+    width: 20%;
 }
 
-.image-upload-wrap{
-    object-fit:contain;
-    border-radius:10px;
-    border:dashed 1.5px #35465d;
-    background-color:#ffffff;
-    /*width: 60%;*/
-    margin: 0 auto;
-}
-
-.image-upload-wrap:hover{
-    border:dashed 1.5px #ffffff;
-    background-color:#35465d;
-}
-
-.drag-text h3{
-    font-family: NanumSquareR;    
+.upload-text {
+    width: 58%;
     font-size: 1.5rem;
     line-height: 1.53;
     text-align: center;
-    color: #35465d; 
-    width: 60%;
+    color: #35465d;
     margin: 0 auto;
+}
+
+.footer {
+    background-color: initial;
+    color: initial;
+}
+
+#label-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.result-message {
+    font-size: 2rem;
+}
+
+.bar-container {
+  height: 2.7rem;
+}
+.resultdone-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(13, 7, 240, 0.2);
+}
+.resultdone-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  border-radius: 10px;
+  background-color: rgba(13, 7, 240, 1);
+}
+.percent-text {
+  font-size: 5rem;
+  color: #ffffff;
+}
+.resultdone-label {
+    width: 20%;
+    text-align: left;
+    height: 5rem;
+    font-size: 3rem;
+}
+.resultdone-explain1 {
+    font-size: 1.5rem;
+}
+.resultdone-title {
+    color: #3ba363;
+}
+.resultdone-explain2 {
+    color: #3ba363;
+    font-size: 1.2rem;
 }
 
