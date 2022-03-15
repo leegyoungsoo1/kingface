@@ -1,0 +1,61 @@
+body {
+  font-family: 'Cute Font', cursive;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  color: #35465d;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.title {
+  font-size: 4rem;  
+  line-height: 1.67;
+  text-align: center;
+  color: #35465d;
+}
+
+.subtitle {
+  font-size: 2.5rem;  
+  line-height: 1.53;
+  text-align: center;
+  color: #35465d;
+}
+
+.subtitle2 {
+  font-size: 1.5rem;  
+  line-height: 1.53;
+  text-align: center;
+  color: #35465d;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+}
+
+
+.contents {
+    padding: 5% 3% 5% 0%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: solid 1.5px #f6f7fa;
+    background-color: #f6f7fa;
+}
+
+.contents-text{
+  font-size: 5rem;  
+  line-height: 1.53;
+  text-align: center;
+  color: #0070C0;    
+}
+
+.disqus_thread1{
+    padding: 3% 7% 3% 7%;
+}

@@ -16,7 +16,10 @@
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
             crossorigin="anonymous"
         />
-        <title>내가 ㅇㅇ 될 상인가?</title>
+        <title>내가 왕이 될 상인가?</title>
+        <meta name="subject" content="내가 왕이 될 상인가? 사진으로 확인하는 인공지능(AI) 관상 테스트. 내가 국회의원이 될 상인지 자신의 사진으로 직접 확인해 보세요. 6/1 지방선거 출마자 얼굴로 당선확률을 예측해 봅니다.">
+        <meta name="keywords" content="내가 왕이 될 상인가, 인공지능 국회의원 당선확률, 당선확률, 지방선거, 국회의원 선거, 국회의원, 당선예측, 6.1 지방선거, 8회 지방선거, 8회 전국동시지방선거, 당선확률 예측, 관상, 관상으로 당선확률, 얼굴로 당선확률, 국회의원 출마, 국회의원 당선확률, 왕상, 왕이될 상, AI 관상테스트, AI 관상">        
+        <meta name="author" content="SooSLab">
         <link rel="stylesheet" href="style.css" />
         <script
             type="text/javascript"
@@ -27,7 +30,8 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">내가 ㅇㅇ 될 상 인가?</a>
+                <a class="navbar-brand" href="index.html">내가 왕이 될 상인가?</a>
+                <a class="navbar-brand" href="index2.html">6/1 지방선거 당선예측(AI)</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -42,24 +46,24 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">나의 관상 당선 확률(AI)</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="index2.html">22년6월1일 지방선거(8회) 당선예측(AI)</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
+                            <a class="nav-link" href="#">개발자정보</a>
+                        </li>                        
                     </ul>
                 </div>
             </div>
         </nav>
         <section class="section">
-            <h1 class="title">인공지능 상 테스트</h1>
-            <h2 class="subtitle">내가 ㅇㅇ될 상인가?</h2>
+            <h1 class="title">내가 왕이 될 상 인가?</h1>
+            <h1 class="subtitle">재미로 보는 인공지능(AI) 관상 테스트</h1>
+            <h2 class="subtitle">내가 국회의원이 될 상인가? </h2>
+            <h2 class="subtitle">내 사진으로 보는 당선 확률은? </h2>
+            <p class="subtitle2">21대(현재) ~ 13대 국회의원 2,845명의 얼굴과 비교 하여 결과를 추출 합니다.</p>
         </section>
         <script
             class="jsbin"
@@ -76,8 +80,11 @@
                 <div class="drag-text">
                     <img src="img/upload.svg" class="mt-5 pt-5 upload" />
                     <h3 class="mt-5 pb-5 pt-4 upload-text">
-                        얼굴 사진을 올려놓거나 눌러서 업로드 하세요!
+                        얼굴 사진을 드래그 하거나, 터치하여 사진을 촬영 하세요!                        
                     </h3>
+                    <p class="drag-text-p">
+                        * 적용된 사진은 사이트 어디에도 저장되지 않고 재 사용되지 않습니다.
+                    </p>
                 </div>
             </div>
             <div class="file-upload-content">
@@ -86,35 +93,49 @@
                     <div class="spinner-border" role="status">
                         <span class="sr-only"></span>
                     </div>
-                    <p class="text-center">AI가 분석중입니다.</p>
+                    <p class="loading-text">AI가 역대 국회의원 2,845명의 데이터를 바탕으로 결과출 추출중입니다.</p>
                 </div>
                 <p class="result-message"></p>
-                <div id="label-container" class="d-flex flex-column justify-content-around"></div>
-                <div class="addthis_inline_share_toolbox_dazo"></div>
+                <div id="label-container" class="d-flex flex-column justify-content-around"></div>                
                 <div class="pt-3 image-title-wrap">
                     <button
                         type="button p-2"
                         class="try-again-btn"                        
                         data-toggle="modal"
                         data-target="#adModal"
+                        onclick="gaReload1();"
                     >
-                        <span class="try-again-text">다른 사진으로 재시도</span>
+                        <span class="try-again-text">다른 사진으로 다시 해볼게요.</span>
                     </button>
                 </div>
+                <div class="addthis_inline_share_toolbox_dazo"></div>
             </div>
         </div>
+        <div class="disqus_thread1" id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://sooslab-king-face.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>        
+
+        
         <script>
             function gaReload1() {
-                gtag('event', '다른 사진으로 재시도 1차', {
-                    event_category: '다른 사진으로 재시도',
-                });
-            }
-            function gaReload2() {
-                gtag('event', '다른 사진으로 재시도 2차', {
-                    event_category: '다른 사진으로 재시도',
-                });
                 window.location.reload();
-            }
+            }            
         </script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -166,7 +187,7 @@
             // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
             // the link to your model provided by Teachable Machine export panel
             // 머신러닝 데이터
-            const URL = 'https://teachablemachine.withgoogle.com/models/L6JzGEJb9/';
+            const URL = 'https://teachablemachine.withgoogle.com/models/pKbUbd18X/';
             let model, webcam, labelContainer, maxPredictions;
             // Load the image model and setup the webcam
             // 머신러닝 시작
@@ -191,9 +212,17 @@
                 prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
                 var resultMessage;
                 var resultTitle, resultExplain1, resultExplain2;
-                resultTitle = prediction[0].className;
-                resultExplain1 = "당신은 왕이될 상이로다!"
-                resultExplain2 = "태조,영조,정조"
+                if(Math.round(prediction[0].probability.toFixed(2) * 100) >= 80){
+                    resultTitle = "대단한 관상 입니다.";    
+                    resultExplain1 = "당신은 " + Math.round(prediction[0].probability.toFixed(2) * 100) + "% 의 확률 이네요.";
+                    resultExplain2 = "국회의원에 도전하세요. 멋진 대한민국을 만들어 주세요.";
+                }
+                else{
+                    resultTitle = "아쉬워요.";    
+                    resultExplain1 = "당신은 " + Math.round(prediction[0].probability.toFixed(2) * 100) + "% 의 확률 이네요." 
+                    resultExplain2 = "그래도 도전하세요. 국회로 입성하여 꿈을 펼쳐 주세요.";
+                }                
+                
                 var title =   "<div class='resultdone-title'>" + resultTitle + '</div>';
                 var explain1 = "<div class='resultdone-explain1 pt-2'>" + resultExplain1 + '</div>';
                 var explain2 =   "<div class='resultdone-explain2 pt-2 pb-2'>" + resultExplain2 + '</div>';
@@ -207,7 +236,7 @@
                     } else {
                         barWidth = '2%';
                     }
-                    var labelTitle = prediction[i].className;                    
+                    var labelTitle = "당선 확률";                    
                     var label = "<div class='resultdone-label d-flex align-items-center'>" + labelTitle + '</div>';
                     var bar =   "<div class='bar-container position-relative container'><div class='resultdone-box'></div><div class='d-flex justify-content-center align-items-center resultdone-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" +
                         Math.round(prediction[i].probability.toFixed(2) * 100) +'%</span></div></div>';
