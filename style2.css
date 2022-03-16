@@ -30,16 +30,69 @@ body {
   color: #35465d;
 }
 
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-  html {
-    font-size: 10px;
-  }
-    .navbar-brand {
-        font-size: 2rem;
-    }
+.navbar-light .navbar-brand {
+  line-height: 1.68;
+  text-align: left;
+  color: #35465d; 
 }
 
+.navbar-light .navbar-toggler {
+    border-color: #ffffff;
+}
+
+.navbar-light .navbar-nav {
+    font-size: 2rem;
+}
+
+
+/*768 이하 일때 수행*/
+@media screen and (max-width: 768px) {
+      html {
+        font-size: 10px;
+      }
+     .navbar-brand {
+            font-size: 2rem;
+      }
+    
+    .card-img{
+    width: 50px;
+    height: 50px;
+    }
+    
+    .card-face {
+      display: block;
+      margin: 2% auto;
+      padding: 2% 2%;
+      max-width: 100px;
+
+      text-align: center;
+      color: #898798;
+      border-radius: 3px;
+      box-shadow: 0 3px 12px rgba(95, 92, 120, 0.32);
+    }
+    
+}
+
+/*768 이상 일때 수행*/
+@media screen and (min-width: 768px) {
+    .card-img{
+    width: 80px;
+    height: 80px;
+    }
+    
+    .card-face {
+      display: block;
+      margin: 2% auto;
+      padding: 2% 2%;
+      max-width: 150px;
+
+      text-align: center;
+      color: #898798;
+      border-radius: 8px;
+      box-shadow: 0 3px 12px rgba(95, 92, 120, 0.32);
+    }
+    
+}
 
 .contents {
     padding: 5% 3% 5% 0%;
@@ -61,6 +114,122 @@ body {
 }
 
 .ad-banner{
-    width: 320px;
-    margin: 0 auto;
+    padding: 3% 7% 0% 7%;
+}
+
+
+.card-face .header {
+  margin-bottom: 2%;
+}
+
+
+
+.card-text-name {
+    color: #000000 !important;
+    font-size:1.5rem;
+    padding-right:2%;
+}
+
+.bar-container {
+  height: 2.7rem;
+}
+/*0번 미확정*/
+.card-text0 {
+    background-color:#000000;
+    color:#ffffff;
+    font-size:1rem;
+}
+
+.card-box0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card-bar0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.card-percent-text0 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+
+/*1번 더불어민주당*/
+.card-text1 {
+    background-color:#004EA2;
+    color:#ffffff;
+    font-size:1rem;
+}
+
+.card-box1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgba(0, 78, 162, 0.2);
+}
+
+.card-bar1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  border-radius: 5px;
+  background-color: rgba(0, 78, 162, 1);
+}
+
+.card-percent-text1 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+
+/*2번 국민의힘*/
+.card-text2 {
+    background-color:#E61E2B;
+    color:#ffffff;
+    font-size:1rem;
+}
+
+.card-box2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgba(230, 30, 43, 0.2);
+}
+
+.card-bar2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  border-radius: 5px;
+  background-color: rgba(230, 30, 43, 1);
+}
+
+.card-percent-text2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.card-title-h1{
+  font-size: 3rem;     
+  line-height: 1;    
+  color:#6E6C6C;
 }

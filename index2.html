@@ -16,53 +16,89 @@
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
             crossorigin="anonymous"
         />
-        <link rel="shortcut icon" href="/favicon2.ico" type="image/x-icon">
-        <link rel="icon" href="/favicon2.ico" type="image/x-icon">        
-        <title>내가 왕이 될 상인가?</title>
-        <link rel="stylesheet" href="style2.css" />
         <script
-            type="text/javascript"
-            src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-622e9a63e674063e"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
         ></script>
+        <link rel="shortcut icon" href="/favicon2.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon2.ico" type="image/x-icon" />
+        <title>관상으로 보는 8회 지방선거 당선예측(AI)</title>
+        <meta name="subject" content="재미로보는 지방선거 당선예측. 관상으로 보는 지방선거 당선예측. 6/1 지방선거 출마자 얼굴로 당선확률을 예측해 봅니다.">
+        <meta name="keywords" content="8회 지방선거,6/1 지방선거, 당선예측, 지방선거, 국회의원 선거, 국회의원, 관상, 관상으로 보는 당선예측, 8회 지방선거, 8회 전국동시지방선거, 당선확률 예측, 내가 왕이될 상인가, 관상으로 당선확률, 얼굴로 당선확률, 국회의원 출마, 국회의원 당선확률, 왕상, 왕이될 상, AI 관상테스트, AI 관상">        
+        <meta name="author" content="SooSLab">        
+        <link rel="stylesheet" href="style2.css" />
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-622e9a63e674063e"></script>
     </head>
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">내가 왕이 될 상인가?</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="container-fluid">                
+                <img src="./img/king_img1.png" style="width:5%;height:5%;">
+                <a class="navbar-brand" href="index.html">내가 왕이 될 상인가?</a>                
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width:40%;">
+                  <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">메뉴</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html"
-                                >나의 관상 당선 확률(AI)</a
-                            >
+                            <a class="nav-link" href="index.html">나의 관상 당선 확률(AI)</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="index2.html"
-                                >2022년6월1일 지방선거 당선예측(AI)</a
-                            >
+                            <a class="nav-link active" aria-current="page" href="index2.html">6/1 지방선거(8회) 예측(AI)</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">개발자정보</a>
-                        </li>
-                    </ul>
-                </div>
+                            <a
+                                class="nav-link"    
+                                data-bs-toggle="modal" href="#devinfo">개발자정보</a
+                            >
+                        </li>                        
+                    </ul>                    
+                  </div>
+                </div>                
             </div>
         </nav>
+        <div
+            class="modal fade"
+            id="devinfo"
+            tabindex="-1"
+            aria-labelledby="devinfoLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="devinfoLabel">개발자 정보</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        1. 본 사이트의 결과 예측은 대한민국 국회의원의 사진 빅데이터를 활용하여 구글
+                        인공지능 프로그램으로 개발 하였습니다.<br />
+                        2. 본 사이트에서 사용되는 사진은 어디에도 전송되거나 저장되지 않습니다.<br />
+                        3. 재미로 보는 예측 사이트 입니다. 실제 결과와는 다를수 있습니다.<br />
+                        4. 본 사이트는 특정 정당과는 무관 합니다.<br />
+                        5. 본 사이트 제작은 유튜버 조코딩 님의 영상을 참고 하였습니다.<br />
+                        6. 궁금한점은 Email: leegyoungsoo1@gmail.com 로 문의 바랍니다.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="section">
             <h2 class="title">6월1일 지방선거(8회) 당선예측</h2>
-            <h1 class="subtitle">재미로 보는 인공지능(AI) 관상 테스트</h1>
+            <h1 class="subtitle"><b style="color:#E7408E;">재미로 보는</b> 인공지능(AI) 관상 테스트</h1>
             <h2 class="subtitle">출마자의 사진으로 당선예측을 해보겠습니다.</h2>
             <h2 class="subtitle">선거가 끝난후 실제 당선자와 비교해 보겠습니다.</h2>
             <p class="subtitle2">
@@ -72,7 +108,8 @@
                 4대 정당 버프 적용기준(민주당:30%,국민의힘:30%,정의당:10%,국민의당:10%)
             </p>
             <p class="subtitle2">본 사이트는 특정 당과는 무관합니다. 재미로 봐 주시기 바랍니다.</p>
-        </section>
+            <div class="addthis_inline_share_toolbox_dazo" style="text-align:center;"></div>
+        </section>        
         <div class="container contents">
             <h1 class="contents-text">개발 준비중 입니다.</h1>
             <h1 class="subtitle2">아래의 데이터는 샘플 데이터 입니다.</h1>
@@ -80,47 +117,346 @@
             <h1 class="subtitle2">
                 1인 개발자라 법적인 문제는 잘모르겠습니다. 전문가님들의 조언을 구합니다.
             </h1>
+            <h1 class="contents-text">화면을 가로로 봐주시면 감사하겠습니다.</h1>
         </div>        
+        <div class="page-section">
+            <div class="container">
+                <h1 class="card-title-h1">서울특별시장</h1>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="card-face">
+                            <div class="header">
+                                <img class="card-img" src="./img/parkys.jpg" alt="" />                                
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <span><b class="card-text-name">박영선</b><b class="card-text1">더민주당</b></span>    
+                                </div>                                
+                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
+                                <div class='bar-container position-relative container'>
+                                    <div class='card-box1'></div>
+                                    <div class='d-flex justify-content-center align-items-center card-bar1' style='width:46%;'>
+                                        <span class='d-block card-percent-text1'>46%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="./img/win.jpg" style="width:20%;height:20%;"><b>당선예상(AI)</b>
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card-face">
+                            <div class="header">
+                                <img class="card-img" src="./img/ohseohoon.jpg" alt="" />                                
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <span><b class="card-text-name">오세훈</b><b class="card-text2">국민의힘</b></span>    
+                                </div>        
+                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
+                                <div class='bar-container position-relative container'>
+                                    <div class='card-box2'></div>
+                                    <div class='d-flex justify-content-center align-items-center card-bar2' style='width:35%;'>
+                                        <span class='d-block card-percent-text2'>35%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b>-</b>
+                                </div>
+                            </div>                        
+                        </div>                      
+                    </div> 
+                    <div class="col-sm-2">
+                        <div class="card-face">
+                            <div class="header">
+                                <img class="card-img" src="./img/person1.png" alt="" />                                
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
+                                </div>        
+                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
+                                <div class='bar-container position-relative container'>
+                                    <div class='card-box0'></div>
+                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
+                                        <span class='d-block card-percent-text0'>0%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b>-</b>
+                                </div>
+                            </div>                        
+                        </div>                      
+                    </div> 
+                    <div class="col-sm-2">
+                        <div class="card-face">
+                            <div class="header">
+                                <img class="card-img" src="./img/person1.png" alt="" />                                
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
+                                </div>        
+                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
+                                <div class='bar-container position-relative container'>
+                                    <div class='card-box0'></div>
+                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
+                                        <span class='d-block card-percent-text0'>0%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b>-</b>
+                                </div>
+                            </div>                        
+                        </div>                      
+                    </div> 
+                    <div class="col-sm-2">
+                        <div class="card-face">
+                            <div class="header">
+                                <img class="card-img" src="./img/person1.png" alt="" />                                
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
+                                </div>        
+                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
+                                <div class='bar-container position-relative container'>
+                                    <div class='card-box0'></div>
+                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
+                                        <span class='d-block card-percent-text0'>0%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b>-</b>
+                                </div>
+                            </div>                        
+                        </div>                      
+                    </div> 
+                    <div class="col-sm-2">
+                        <div class="card-face">
+                            <div class="header">
+                                <img class="card-img" src="./img/person1.png" alt="" />                                
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
+                                </div>        
+                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
+                                <div class='bar-container position-relative container'>
+                                    <div class='card-box0'></div>
+                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
+                                        <span class='d-block card-percent-text0'>0%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b>-</b>
+                                </div>
+                            </div>                        
+                        </div>                      
+                    </div>                    
+                <!--column-->                                          
+                </div><!--row-->
+                <h1 class="card-title-h1">부산광역시장</h1>
+                <div class="row">    
+                    <div class="col-sm-2">
+                        <div class="card-face">
+                            <div class="header">
+                                <img class="card-img" src="./img/person1.png" alt="" />                                
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
+                                </div>        
+                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
+                                <div class='bar-container position-relative container'>
+                                    <div class='card-box0'></div>
+                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
+                                        <span class='d-block card-percent-text0'>0%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b>-</b>
+                                </div>
+                            </div>                        
+                        </div>                      
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card-face">
+                            <div class="header">
+                                <img class="card-img" src="./img/parkhj.jpg" alt="" />                                
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <span><b class="card-text-name">박형준</b><b class="card-text2">국민의힘</b></span>    
+                                </div>        
+                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
+                                <div class='bar-container position-relative container'>
+                                    <div class='card-box2'></div>
+                                    <div class='d-flex justify-content-center align-items-center card-bar2' style='width:38%;'>
+                                        <span class='d-block card-percent-text2'>38%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b>-</b>
+                                </div>
+                            </div>                        
+                        </div>                     
+                    </div> 
+                    <div class="col-sm-2">
+                        <div class="card-face">
+                            <div class="header">
+                                <img class="card-img" src="./img/person1.png" alt="" />                                
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
+                                </div>        
+                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
+                                <div class='bar-container position-relative container'>
+                                    <div class='card-box0'></div>
+                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
+                                        <span class='d-block card-percent-text0'>0%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b>-</b>
+                                </div>
+                            </div>                        
+                        </div>                      
+                    </div> 
+                    <div class="col-sm-2">
+                        <div class="card-face">
+                            <div class="header">
+                                <img class="card-img" src="./img/person1.png" alt="" />                                
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
+                                </div>        
+                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
+                                <div class='bar-container position-relative container'>
+                                    <div class='card-box0'></div>
+                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
+                                        <span class='d-block card-percent-text0'>0%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b>-</b>
+                                </div>
+                            </div>                        
+                        </div>                      
+                    </div> 
+                    <div class="col-sm-2">
+                        <div class="card-face">
+                            <div class="header">
+                                <img class="card-img" src="./img/person1.png" alt="" />                                
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
+                                </div>        
+                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
+                                <div class='bar-container position-relative container'>
+                                    <div class='card-box0'></div>
+                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
+                                        <span class='d-block card-percent-text0'>0%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b>-</b>
+                                </div>
+                            </div>                        
+                        </div>                      
+                    </div> 
+                    <div class="col-sm-2">
+                        <div class="card-face">
+                            <div class="header">
+                                <img class="card-img" src="./img/person1.png" alt="" />                                
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
+                                </div>        
+                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
+                                <div class='bar-container position-relative container'>
+                                    <div class='card-box0'></div>
+                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
+                                        <span class='d-block card-percent-text0'>0%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b>-</b>
+                                </div>
+                            </div>                        
+                        </div>                      
+                    </div>                    
+                <!--column-->                         
+                </div><!--row-->                
+            </div>            
+        </div>        
+        
+        
+
         <div class="disqus_thread1" id="disqus_thread"></div>
         <script>
             /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
             /*
             var disqus_config = function () {
             this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
             this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
             */
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://sooslab-assembly.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
+            (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                    s = d.createElement('script');
+                s.src = 'https://sooslab-assembly.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
             })();
         </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>        
+        <noscript
+            >Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript
+        >
         <div class="ad-banner">
-            <ins class="kakao_ad_area" style="display:none;" 
-             data-ad-unit    = "DAN-Iui32ZnbjMoPvXKN" 
-             data-ad-width   = "320" 
-             data-ad-height  = "100"></ins> 
-            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>                
+            <ins
+                class="kakao_ad_area"
+                style="display: none;"
+                data-ad-unit="DAN-Iui32ZnbjMoPvXKN"
+                data-ad-width="320"
+                data-ad-height="100"
+            ></ins>
+            <script
+                type="text/javascript"
+                src="//t1.daumcdn.net/kas/static/ba.min.js"
+                async
+            ></script>
         </div>
         <div class="ad-banner">
-            <ins class="kakao_ad_area" style="display:none;" 
-             data-ad-unit    = "DAN-D4PWkqpKvTKA7g9f" 
-             data-ad-width   = "320" 
-             data-ad-height  = "50"></ins> 
-            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>                    
-        </div>        
+            <ins
+                class="kakao_ad_area"
+                style="display: none;"
+                data-ad-unit="DAN-D4PWkqpKvTKA7g9f"
+                data-ad-width="320"
+                data-ad-height="50"
+            ></ins>
+            <script
+                type="text/javascript"
+                src="//t1.daumcdn.net/kas/static/ba.min.js"
+                async
+            ></script>
+        </div>
         <footer class="footer pt-5 container d-flex justify-content-center">
             <div>
                 <p>
-                    Copyright (c) SoosLab 2020. All Rights Reserved.
-                </p>            
+                    Copyright (c) SoosLab 2022. All Rights Reserved.
+                </p>
             </div>
-        </footer>        
+        </footer>
     </body>
 
     <!-- Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
