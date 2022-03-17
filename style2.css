@@ -109,6 +109,13 @@ body {
   color: #0070C0;    
 }
 
+.contents-text2{
+  font-size: 3rem;  
+  line-height: 1.53;
+  text-align: center;
+  color: #0070C0;    
+}
+
 .disqus_thread1{
     padding: 3% 7% 3% 7%;
 }
@@ -233,3 +240,27 @@ body {
   line-height: 1;    
   color:#6E6C6C;
 }
+
+
+.div-link-button{
+    text-align:center;
+    padding-bottom:3%;
+}
+
+.btn-get-link {  
+  text-transform: uppercase;  
+  font-size: 1.2rem;    
+  padding: 11px 36px;
+  border-radius: 50px;
+  transition: 0.5s;  
+  border: 2px solid #71c55d;
+  background: #fff;
+  color: #71c55d;
+  text-decoration: none;
+}
+
+.btn-get-link:hover {
+  background: #71c55d;
+  color: #fff;
+}
+
