@@ -65,9 +65,39 @@
         <meta name="twitter:domain" content="https://sooslab.co.kr/index2.html">        
         <!--네이버 사이트 소유 확인-->
         <meta name="naver-site-verification" content="38ace8dc75490c065d528c2c3ad828f9b1cb8c57" />
+        
+        <script type="text/javascript">
+            function displaycard_load(){
+                //순번키:0번:미확정,1번:더민주당,2번:국민의힘,3번:정의당,4번:국민의당
+                //컨데이너이름,순번키,이름,성별(M,W,N),당선예상(Y,N),확률
+                //displaycard(container_name1, idx1, name1, gender1, win1, value1)
+                //서울특별시장
+                displaycard("card-container-seo-1","1","미확정","N","N","0");                    
+                displaycard("card-container-seo-2","2","미확정","N","N","0");                    
+                displaycard("card-container-seo-3","3","미확정","N","N","0");                    
+                displaycard("card-container-seo-4","4","미확정","N","N","0");                    
+                displaycard("card-container-seo-5","0","미확정","N","N","0");                    
+                displaycard("card-container-seo-6","0","미확정","N","N","0");                    
+                //부산광역시장
+                displaycard("card-container-pus-1","1","미확정","N","N","0");                    
+                displaycard("card-container-pus-2","2","미확정","N","N","0");                    
+                displaycard("card-container-pus-3","3","미확정","N","N","0");                    
+                displaycard("card-container-pus-4","4","미확정","N","N","0");                    
+                displaycard("card-container-pus-5","0","미확정","N","N","0");                    
+                displaycard("card-container-pus-6","0","미확정","N","N","0");                     
+                //대구광역시시장
+                displaycard("card-container-dae-1","1","미확정","N","N","0");                    
+                displaycard("card-container-dae-2","2","미확정","N","N","0");                    
+                displaycard("card-container-dae-3","3","미확정","N","N","0");                    
+                displaycard("card-container-dae-4","4","미확정","N","N","0");                    
+                displaycard("card-container-dae-5","0","미확정","N","N","0");                    
+                displaycard("card-container-dae-6","0","미확정","N","N","0");                    
+            }
+            
+        </script>
     </head>
 
-    <body>
+    <body onload="displaycard_load()">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">                
                 <img src="./img/king_img1.png" style="width:5%;height:5%;">
@@ -159,284 +189,40 @@
         </section>        
         <div class="container contents">
             <h1 class="contents-text">개발중 입니다. 4/2 적용 예정.</h1>
-            <h1 class="contents-text2">출마자가 확정 될 때마다 업데이트 하겠습니다.</h1>
-            <h1 class="subtitle2">아래의 데이터는 샘플 데이터 입니다.</h1>
+            <h1 class="contents-text2">출마자가 확정 될 때 업데이트 하겠습니다.</h1>            
             <h1 class="subtitle2">사진은 저작권 관련 문제의 소지가 있어 표시하지 않겠습니다.</h1>                        
         </div>        
         <div class="page-section">
             <div class="container">
                 <h1 class="card-title-h1">서울특별시장</h1>
                 <div class="row row-cols-4 row-cols-sm-6 g-4">
-                    <div class="col">
-                        <div class="card-face">
-                            <div class="header">
-                                <img class="card-img" src="./img/person1.png" alt="" />                                
-                            </div>
-                            <div class="body">
-                                <div>
-                                    <span><b class="card-text-name">미확정</b><b class="card-text1">더민주당</b></span>    
-                                </div>                                
-                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
-                                <div class='bar-container position-relative container'>
-                                    <div class='card-box1'></div>
-                                    <div class='d-flex justify-content-center align-items-center card-bar1' style='width:2%;'>
-                                        <span class='d-block card-percent-text1'>100%</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <img src="./img/win.jpg" style="width:20%;height:20%;"><b>당선예상(AI)</b>
-                                </div>
-                            </div>
-                        </div>                      
-                    </div>
-                    <div class="col">
-                        <div class="card-face">
-                            <div class="header">
-                                <img class="card-img" src="./img/man1.png" alt="" />                                
-                            </div>
-                            <div class="body">
-                                <div>
-                                    <span><b class="card-text-name">오세훈</b><b class="card-text2">국민의힘</b></span>    
-                                </div>        
-                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
-                                <div class='bar-container position-relative container'>
-                                    <div class='card-box2'></div>
-                                    <div class='d-flex justify-content-center align-items-center card-bar2' style='width:45.5%;'>
-                                        <span class='d-block card-percent-text2'>45.5%</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <b>-</b>
-                                </div>
-                            </div>                        
-                        </div>                      
-                    </div> 
-                    <div class="col">
-                        <div class="card-face">
-                            <div class="header">
-                                <img class="card-img" src="./img/person1.png" alt="" />                                
-                            </div>
-                            <div class="body">
-                                <div>
-                                    <span><b class="card-text-name">권수정</b><b class="card-text3">정의당</b></span>    
-                                </div>        
-                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
-                                <div class='bar-container position-relative container'>
-                                    <div class='card-box3'></div>
-                                    <div class='d-flex justify-content-center align-items-center card-bar3' style='width:2%;'>
-                                        <span class='d-block card-percent-text3'>0%</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <b>-</b>
-                                </div>
-                            </div>                        
-                        </div>                      
-                    </div> 
-                    <div class="col">
-                        <div class="card-face">
-                            <div class="header">
-                                <img class="card-img" src="./img/person1.png" alt="" />                                
-                            </div>
-                            <div class="body">
-                                <div>
-                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
-                                </div>        
-                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
-                                <div class='bar-container position-relative container'>
-                                    <div class='card-box0'></div>
-                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
-                                        <span class='d-block card-percent-text0'>0%</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <b>-</b>
-                                </div>
-                            </div>                        
-                        </div>                      
-                    </div> 
-                    <div class="col">
-                        <div class="card-face">
-                            <div class="header">
-                                <img class="card-img" src="./img/person1.png" alt="" />                                
-                            </div>
-                            <div class="body">
-                                <div>
-                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
-                                </div>        
-                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
-                                <div class='bar-container position-relative container'>
-                                    <div class='card-box0'></div>
-                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
-                                        <span class='d-block card-percent-text0'>0%</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <b>-</b>
-                                </div>
-                            </div>                        
-                        </div>                      
-                    </div> 
-                    <div class="col">
-                        <div class="card-face">
-                            <div class="header">
-                                <img class="card-img" src="./img/person1.png" alt="" />                                
-                            </div>
-                            <div class="body">
-                                <div>
-                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
-                                </div>        
-                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
-                                <div class='bar-container position-relative container'>
-                                    <div class='card-box0'></div>
-                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
-                                        <span class='d-block card-percent-text0'>0%</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <b>-</b>
-                                </div>
-                            </div>                        
-                        </div>                      
-                    </div>                    
+                    <div id="card-container-seo-1"></div>                     
+                    <div id="card-container-seo-2"></div>                     
+                    <div id="card-container-seo-3"></div>                     
+                    <div id="card-container-seo-4"></div>                     
+                    <div id="card-container-seo-5"></div>                     
+                    <div id="card-container-seo-6"></div>                   
                 <!--column-->                                          
                 </div><!--row-->
                 <h1 class="card-title-h1">부산광역시장</h1>
                 <div class="row row-cols-4 row-cols-sm-6 g-4">
-                    <div class="col">
-                        <div class="card-face">
-                            <div class="header">
-                                <img class="card-img" src="./img/person1.png" alt="" />                                
-                            </div>
-                            <div class="body">
-                                <div>
-                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
-                                </div>        
-                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
-                                <div class='bar-container position-relative container'>
-                                    <div class='card-box0'></div>
-                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
-                                        <span class='d-block card-percent-text0'>0%</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <b><img src="./img/win.jpg" style="width:20%;height:20%;"><b>당선예상(AI)</b></b>
-                                </div>
-                            </div>                        
-                        </div>                      
-                    </div>
-                    <div class="col">
-                        <div class="card-face">
-                            <div class="header">
-                                <img class="card-img" src="./img/man1.png" alt="" />                                
-                            </div>
-                            <div class="body">
-                                <div>
-                                    <span><b class="card-text-name">박형준</b><b class="card-text2">국민의힘</b></span>    
-                                </div>        
-                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
-                                <div class='bar-container position-relative container'>
-                                    <div class='card-box2'></div>
-                                    <div class='d-flex justify-content-center align-items-center card-bar2' style='width:38%;'>
-                                        <span class='d-block card-percent-text2'>38%</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <b>-</b>
-                                </div>
-                            </div>                        
-                        </div>                     
-                    </div> 
-                    <div class="col">
-                        <div class="card-face">
-                            <div class="header">
-                                <img class="card-img" src="./img/person1.png" alt="" />                                
-                            </div>
-                            <div class="body">
-                                <div>
-                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
-                                </div>        
-                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
-                                <div class='bar-container position-relative container'>
-                                    <div class='card-box0'></div>
-                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
-                                        <span class='d-block card-percent-text0'>0%</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <b>-</b>
-                                </div>
-                            </div>                        
-                        </div>                      
-                    </div> 
-                    <div class="col">
-                        <div class="card-face">
-                            <div class="header">
-                                <img class="card-img" src="./img/person1.png" alt="" />                                
-                            </div>
-                            <div class="body">
-                                <div>
-                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
-                                </div>        
-                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
-                                <div class='bar-container position-relative container'>
-                                    <div class='card-box0'></div>
-                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
-                                        <span class='d-block card-percent-text0'>0%</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <b>-</b>
-                                </div>
-                            </div>                        
-                        </div>                      
-                    </div> 
-                    <div class="col">
-                        <div class="card-face">
-                            <div class="header">
-                                <img class="card-img" src="./img/person1.png" alt="" />                                
-                            </div>
-                            <div class="body">
-                                <div>
-                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
-                                </div>        
-                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
-                                <div class='bar-container position-relative container'>
-                                    <div class='card-box0'></div>
-                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
-                                        <span class='d-block card-percent-text0'>0%</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <b>-</b>
-                                </div>
-                            </div>                        
-                        </div>                      
-                    </div> 
-                    <div class="col">
-                        <div class="card-face">
-                            <div class="header">
-                                <img class="card-img" src="./img/person1.png" alt="" />                                
-                            </div>
-                            <div class="body">
-                                <div>
-                                    <span><b class="card-text-name">미확정</b><b class="card-text0">미확정</b></span>    
-                                </div>        
-                                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div>    
-                                <div class='bar-container position-relative container'>
-                                    <div class='card-box0'></div>
-                                    <div class='d-flex justify-content-center align-items-center card-bar0' style='width:0%;'>
-                                        <span class='d-block card-percent-text0'>0%</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <b>-</b>
-                                </div>
-                            </div>                        
-                        </div>                      
-                    </div>                    
+                    <div id="card-container-pus-1"></div>                     
+                    <div id="card-container-pus-2"></div>                     
+                    <div id="card-container-pus-3"></div>                     
+                    <div id="card-container-pus-4"></div>                     
+                    <div id="card-container-pus-5"></div>                     
+                    <div id="card-container-pus-6"></div>                   
                 <!--column-->                         
-                </div><!--row-->                
+                </div><!--row-->    
+                <h1 class="card-title-h1">대구광역시장</h1>
+                <div class="row row-cols-4 row-cols-sm-6 g-4">                   
+                    <div id="card-container-dae-1"></div>                     
+                    <div id="card-container-dae-2"></div>                     
+                    <div id="card-container-dae-3"></div>                     
+                    <div id="card-container-dae-4"></div>                     
+                    <div id="card-container-dae-5"></div>                     
+                    <div id="card-container-dae-6"></div>                      
+                </div>
             </div>            
         </div>        
         <div class="flaticon">
@@ -456,7 +242,104 @@
              data-ad-width   = "320" 
              data-ad-height  = "50"></ins> 
             <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-        </div>        
+        </div>  
+        <script type="text/javascript">
+            function displaycard(container_name1, idx1, name1, gender1, win1, value1){       
+                
+                var container1 = document.getElementById(container_name1);    
+                
+                var imgsrc1, party1, card_box_class1, card_text_class1, card_bar_class1, card_percent_text1, win1_str, var_width; 
+                //0번:미확정,1번:더민주당,2번:국민의힘,3번:정의당,4번:국민의당
+                switch (idx1){
+                    case "0":
+                            party1 = "미확정";
+                            card_box_class1 = "card-box0";
+                            card_text_class1 = "card-text0";
+                            card_bar_class1 = "card-bar0";
+                            card_percent_text1 = "card-percent-text0";  
+                            break;
+                    case "1":
+                            party1 = "더민주당";
+                            card_box_class1 = "card-box1";
+                            card_text_class1 = "card-text1";
+                            card_bar_class1 = "card-bar1";
+                            card_percent_text1 = "card-percent-text1";                                
+                            break;
+                    case "2":
+                            party1 = "국민의힘";
+                            card_box_class1 = "card-box2";
+                            card_text_class1 = "card-text2";
+                            card_bar_class1 = "card-bar2";
+                            card_percent_text1 = "card-percent-text2";                                                        
+                            break;
+                    case "3":
+                            party1 = "정의당";
+                            card_box_class1 = "card-box3";
+                            card_text_class1 = "card-text3";
+                            card_bar_class1 = "card-bar3";
+                            card_percent_text1 = "card-percent-text3";                                                        
+                            break;  
+                    case "4":
+                            party1 = "국민의당";
+                            card_box_class1 = "card-box4";
+                            card_text_class1 = "card-text4";
+                            card_bar_class1 = "card-bar4";
+                            card_percent_text1 = "card-percent-text4";                                                        
+                            break;                          
+                    default:
+                            break;
+                }
+                //성별에 따른 이미지표시.
+                if(gender1 == "M"){
+                    imgsrc1 = "./img/man1.png";
+                }else if(gender1 == "W"){
+                    imgsrc1 = "./img/girl1.png";
+                }else{
+                    imgsrc1 = "./img/person1.png";
+                }     
+
+                if(win1 == "Y"){
+                    win1_str = '<img src="./img/win.jpg" style="width:20%;height:20%;"><b>당선예상(AI)</b>';
+                }else{
+                    win1_str = '<b>-</b>';
+                }
+                
+                if(value1 <= 20){
+                    var_width = '20';
+                }else{
+                    var_width = value1;
+                }                  
+                
+                var html_str = '';                        
+                
+                    html_str += '    <div class="col">';
+                    html_str += '        <div class="card-face">';
+                    html_str += '            <div class="header">';                                                
+                    html_str += '                <img class="card-img" src="'+imgsrc1+'" alt="" /> ';
+                    html_str += '            </div>';
+                    html_str += '            <div class="body">';
+                    html_str += '                <div>';
+                    html_str += '                    <span><b class="card-text-name">'+name1+'</b><b class="'+card_text_class1+'">'+party1+'</b></span> ';   
+                    html_str += '                </div>     ';                           
+                    html_str += '                <div id="card-label-container" class="d-flex flex-column justify-content-around"></div> ';   
+                    html_str += '                <div class="bar-container position-relative container">';
+                    html_str += '                    <div class="'+card_box_class1+'"></div>';
+                    html_str += '                    <div class="d-flex justify-content-center align-items-center '+card_bar_class1+'" style="width:'+var_width+'%;">';
+                    html_str += '                        <span class="d-block '+card_percent_text1+'">'+value1+'%</span>';
+                    html_str += '                    </div>';
+                    html_str += '                </div>';
+                    html_str += '                <div>';
+                    html_str += win1_str;                    
+                    html_str += '                </div>';                    
+                    html_str += '            </div>';
+                    html_str += '        </div>    ';    
+                    html_str += '    </div>    ';    
+                
+                container1.innerHTML = html_str;
+                
+                
+            }
+        </script>    
         <!--
         <div class="disqus_thread1" id="disqus_thread"></div>
         <script>

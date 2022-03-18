@@ -166,8 +166,7 @@ body {
   background-color: rgba(0, 0, 0, 1);
 }
 
-.card-percent-text0 {
-  padding-left:30px;  
+.card-percent-text0 {  
   font-size: 1.5rem;
   color: #ffffff;
 }
@@ -265,6 +264,38 @@ body {
 .card-percent-text3 {  
   font-size: 1.5rem;
   color: #000000;
+}
+/*---*/
+/*---*/
+/*4번 국민의당*/
+.card-text4 {
+    background-color:#EA5504;
+    color:#ffffff;
+    font-size:1rem;
+}
+
+.card-box4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgba(234, 85, 4, 0.2);
+}
+
+.card-bar4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  border-radius: 5px;
+  background-color: rgba(234, 85, 4, 1);
+}
+
+.card-percent-text4 {  
+  font-size: 1.5rem;
+  color: #ffffff;
 }
 /*---*/
 
