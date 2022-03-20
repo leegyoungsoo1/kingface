@@ -286,4 +286,7 @@ body {
   color: #fff;
 }
 
-
+.metazton-banner {
+    text-align:center;
+    margin: 0 auto;
+}
